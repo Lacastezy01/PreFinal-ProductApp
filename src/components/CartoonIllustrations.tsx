@@ -138,3 +138,98 @@ export const DeliveryBoxDude: React.FC<IllustrationProps> = ({ className = '', s
     <circle cx="65" cy="85" r="7" fill="#FF168B" stroke="#111111" strokeWidth="3.5" />
   </svg>
 );
+
+export const CartoonHotdog: React.FC<IllustrationProps> = ({ className = '', size = 80 }) => {
+  const numSize = typeof size === 'number' ? size : parseFloat(size) || 80;
+  return (
+    <svg
+      width={numSize}
+      height={numSize * 0.45}
+      viewBox="0 0 120 54"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`cartoon-svg cartoon-hotdog ${className}`}
+    >
+      {/* Bun */}
+      <rect x="8" y="10" width="104" height="34" rx="17" fill="#FFB83F" stroke="#111111" strokeWidth="4" />
+      {/* Sausage */}
+      <rect x="4" y="18" width="112" height="18" rx="9" fill="#FF168B" stroke="#111111" strokeWidth="3.5" />
+      {/* Eyes */}
+      <circle cx="55" cy="26" r="3" fill="#111111" />
+      <circle cx="65" cy="26" r="3" fill="#111111" />
+      <path d="M57 31 Q60 34 63 31" stroke="#111111" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+    </svg>
+  );
+};
+
+export const CartoonGlasses: React.FC<IllustrationProps> = ({ className = '', size = 70 }) => {
+  const numSize = typeof size === 'number' ? size : parseFloat(size) || 70;
+  return (
+    <svg
+      width={numSize}
+      height={numSize * 0.45}
+      viewBox="0 0 100 45"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`cartoon-svg cartoon-glasses ${className}`}
+    >
+      {/* Left lens frame */}
+      <circle cx="26" cy="24" r="16" fill="#36DDE5" stroke="#111111" strokeWidth="4.5" />
+      {/* Right lens frame */}
+      <circle cx="74" cy="24" r="16" fill="#36DDE5" stroke="#111111" strokeWidth="4.5" />
+      {/* Bridge */}
+      <path d="M42 22 Q50 16 58 22" stroke="#111111" strokeWidth="4.5" strokeLinecap="round" fill="none" />
+      {/* Side temples */}
+      <path d="M10 20 L2 14" stroke="#111111" strokeWidth="4.5" strokeLinecap="round" />
+      <path d="M90 20 L98 14" stroke="#111111" strokeWidth="4.5" strokeLinecap="round" />
+    </svg>
+  );
+};
+
+export const CartoonTrain: React.FC<IllustrationProps> = ({ className = '', size = 90 }) => {
+  const numSize = typeof size === 'number' ? size : parseFloat(size) || 90;
+  return (
+    <svg
+      width={numSize}
+      height={numSize * 0.45}
+      viewBox="0 0 130 50"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`cartoon-svg cartoon-train ${className}`}
+    >
+      {/* Body */}
+      <rect x="6" y="10" width="118" height="26" rx="12" fill="#62D99A" stroke="#111111" strokeWidth="4" />
+      {/* Windows */}
+      <circle cx="25" cy="23" r="5" fill="#111111" />
+      <circle cx="45" cy="23" r="5" fill="#111111" />
+      <circle cx="65" cy="23" r="5" fill="#111111" />
+      <circle cx="85" cy="23" r="5" fill="#111111" />
+      <circle cx="105" cy="23" r="5" fill="#111111" />
+      {/* Wheels */}
+      <circle cx="25" cy="39" r="4" fill="#FF168B" stroke="#111111" strokeWidth="2.5" />
+      <circle cx="45" cy="39" r="4" fill="#FF168B" stroke="#111111" strokeWidth="2.5" />
+      <circle cx="65" cy="39" r="4" fill="#FF168B" stroke="#111111" strokeWidth="2.5" />
+      <circle cx="85" cy="39" r="4" fill="#FF168B" stroke="#111111" strokeWidth="2.5" />
+      <circle cx="105" cy="39" r="4" fill="#FF168B" stroke="#111111" strokeWidth="2.5" />
+    </svg>
+  );
+};
+
+export const StarSparkle: React.FC<IllustrationProps> = ({ className = '', size = 30 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 40 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`cartoon-svg star-sparkle ${className}`}
+  >
+    <path
+      d="M20 2 Q22 18 38 20 Q22 22 20 38 Q18 22 2 20 Q18 18 20 2 Z"
+      fill="#FFB83F"
+      stroke="#111111"
+      strokeWidth="2.5"
+    />
+  </svg>
+);
+

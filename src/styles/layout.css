@@ -129,7 +129,38 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
+}
+
+.footer-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-warm-white);
+  border: var(--border-thick);
+  border-radius: var(--radius-blob);
+  box-shadow: var(--shadow-sticker);
+}
+
+.footer-mini-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.mini-item-caption {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.footer-mascot {
+  animation: floatGentle 4s ease-in-out infinite;
 }
 
 .footer-brand {
