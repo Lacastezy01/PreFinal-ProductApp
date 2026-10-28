@@ -856,6 +856,36 @@
   background-color: var(--color-cyan);
 }
 
+.preset-btn--selected {
+  background-color: var(--color-pink);
+  color: var(--color-warm-white);
+  border-color: var(--color-black);
+}
+
+.rating-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.rating-number-input {
+  max-width: 110px;
+}
+
+.rating-star-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.form-submit-row {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
 .form-image-preview-frame {
   margin-top: 0.75rem;
   height: 180px;
@@ -882,12 +912,6 @@
   font-size: 0.85rem;
   font-weight: 600;
   padding: 1rem;
-}
-
-.form-submit-row {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
 }
 
 /* Details Page Layout */

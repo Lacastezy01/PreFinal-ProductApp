@@ -11,8 +11,8 @@ export function validateProductForm(data: ProductFormData): ValidationErrors {
   const trimmedImage = data.featureImage ? String(data.featureImage).trim() : '';
   if (!trimmedImage) {
     errors.featureImage = 'Feature image URL is required';
-  } else if (!/^https?:\/\/.+/i.test(trimmedImage)) {
-    errors.featureImage = 'Image URL must begin with http:// or https://';
+  } else if (!/^(\/|https?:\/\/).+/i.test(trimmedImage)) {
+    errors.featureImage = 'Image URL must begin with http://, https://, or /';
   }
 
   // 2. Product Name
