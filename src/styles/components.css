@@ -375,6 +375,23 @@
   justify-content: center;
 }
 
+.search-addon-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.search-result-pill {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: var(--color-bg-yellow);
+  color: var(--color-black);
+  border: var(--border-thin);
+  border-radius: var(--radius-pill);
+  padding: 0.2rem 0.6rem;
+}
+
 /* Category Filter Tabs */
 .category-filter-wrapper {
   margin-bottom: 2rem;

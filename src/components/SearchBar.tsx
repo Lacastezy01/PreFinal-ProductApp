@@ -5,13 +5,21 @@ export interface SearchBarProps {
   searchTerm: string;
   onSearchChange: (value: string) => void;
   onClear: () => void;
+  resultCount?: number;
 }
 
 export const SearchBar: React.FC<SearchBarProps> = ({
   searchTerm,
   onSearchChange,
-  onClear
+  onClear,
+  resultCount
 }) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Escape') {
+      onClear();
+    }
+  };
+
   return (
     <div className="search-bar-container">
       <div className="search-input-wrapper">
@@ -20,19 +28,28 @@ export const SearchBar: React.FC<SearchBarProps> = ({
           type="text"
           value={searchTerm}
           onChange={(e) => onSearchChange(e.target.value)}
-          placeholder="Search products by name, keyword, or specs..."
+          onKeyDown={handleKeyDown}
+          placeholder="Search products by title, keyword, or specs... (Press Esc to clear)"
           className="search-input"
-          aria-label="Search products"
+          aria-label="Search goods catalog"
         />
         {searchTerm && (
-          <button
-            type="button"
-            onClick={onClear}
-            className="search-clear-btn"
-            aria-label="Clear search input"
-          >
-            <X size={18} strokeWidth={3} />
-          </button>
+          <div className="search-addon-group">
+            {typeof resultCount === 'number' && (
+              <span className="search-result-pill">
+                {resultCount} found
+              </span>
+            )}
+            <button
+              type="button"
+              onClick={onClear}
+              className="search-clear-btn"
+              aria-label="Clear search input"
+              title="Clear search"
+            >
+              <X size={18} strokeWidth={3} />
+            </button>
+          </div>
         )}
       </div>
     </div>

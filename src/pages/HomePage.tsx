@@ -79,6 +79,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             searchTerm={searchTerm}
             onSearchChange={setSearchTerm}
             onClear={() => setSearchTerm('')}
+            resultCount={filteredProducts.length}
           />
 
           {/* Category Filter */}
