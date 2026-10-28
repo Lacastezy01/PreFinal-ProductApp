@@ -1377,9 +1377,59 @@
   overflow: hidden;
 }
 
+.cart-items-header-bar {
+  display: grid;
+  grid-template-columns: 80px 1.5fr 1fr 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--color-bg-yellow);
+  border-bottom: var(--border-thick);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .cart-items-header-bar {
+    display: none;
+  }
+}
+
 .cart-items-list {
   display: flex;
   flex-direction: column;
+}
+
+.cart-item-badges-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.cart-max-stock-warning {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-pink);
+  background-color: #FFF0F5;
+  border: 1px solid var(--color-pink);
+  border-radius: var(--radius-pill);
+  padding: 0.15rem 0.5rem;
+}
+
+.subtotal-calc-breakdown {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: #666666;
+  margin-top: 0.15rem;
 }
 
 .cart-item-row {
