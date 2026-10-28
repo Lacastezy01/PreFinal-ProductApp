@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.75rem;
 }
 
 .brand-logo {
@@ -33,6 +34,7 @@
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius-sm);
   transition: transform var(--transition-bounce);
+  flex-shrink: 0;
 }
 
 .brand-logo:hover {
@@ -46,7 +48,7 @@
 
 .brand-title {
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 3.5vw, 1.6rem);
   color: var(--color-black);
   letter-spacing: -0.03em;
   text-shadow: 2px 2px 0px var(--color-pink);
@@ -73,6 +75,7 @@
   box-shadow: var(--shadow-sticker-sm);
   transition: all var(--transition-fast);
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -116,6 +119,20 @@
   color: var(--color-bg-yellow);
 }
 
+@media (max-width: 600px) {
+  .nav-link span {
+    display: none;
+  }
+  .nav-link {
+    padding: 0.45rem 0.65rem;
+  }
+  .cart-badge-count {
+    min-width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+  }
+}
+
 /* Footer */
 .app-footer {
   border-top: var(--border-thick);
@@ -143,6 +160,13 @@
   border: var(--border-thick);
   border-radius: var(--radius-blob);
   box-shadow: var(--shadow-sticker);
+}
+
+@media (max-width: 600px) {
+  .footer-strip {
+    gap: 1.25rem;
+    padding: 0.75rem 1rem;
+  }
 }
 
 .footer-mini-item {

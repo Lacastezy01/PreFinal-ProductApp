@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { RoboStock, OfflineCat, SunDude, CauldronCreature } from './CartoonIllustrations';
+import {
+  RoboStock,
+  OfflineCat,
+  SunDude,
+  CauldronCreature,
+  StarSparkle
+} from './CartoonIllustrations';
 import { Sparkles, ArrowDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
@@ -13,6 +19,12 @@ export const Hero: React.FC = () => {
         </div>
         <div className="hero-floating hero-floating--sun" aria-hidden="true">
           <SunDude size={85} />
+        </div>
+        <div className="hero-floating hero-floating--sparkle-1" aria-hidden="true">
+          <StarSparkle size={32} />
+        </div>
+        <div className="hero-floating hero-floating--sparkle-2" aria-hidden="true">
+          <StarSparkle size={26} />
         </div>
 
         {/* Main Al Murphy inspired typography blocks */}
@@ -27,31 +39,36 @@ export const Hero: React.FC = () => {
           </div>
 
           <p className="hero-subheading">
-            Voted the most delightfully tactile product management playground in the known universe!
+            Voted the #1 most delightfully tactile product management playground in the known universe!
             Track stock, compute totals, and inspect goods with zero corporate boredom.
           </p>
 
           <div className="hero-actions">
-            <a href="#catalog-section" className="btn btn--primary">
+            <a href="#catalog-section" className="btn btn--primary btn--lg">
               <span>EXPLORE GOODS</span>
-              <ArrowDown size={18} strokeWidth={3} />
+              <ArrowDown size={20} strokeWidth={3} />
             </a>
-            <Link to="/add-product" className="btn btn--secondary">
+            <Link to="/add-product" className="btn btn--secondary btn--lg">
               <span>ADD NEW ITEM</span>
-              <Sparkles size={18} strokeWidth={3} />
+              <Sparkles size={20} strokeWidth={3} />
             </Link>
           </div>
         </div>
 
-        {/* Bottom Illustrated Row */}
+        {/* Bottom Illustrated Row inspired by Al Murphy */}
         <div className="hero-creatures-row" aria-hidden="true">
-          <CauldronCreature size={95} />
+          <div className="creature-wrapper creature-wrapper--cauldron">
+            <CauldronCreature size={100} />
+          </div>
           <div className="hero-speech-bubble">
             <span>SURE, WHY NOT?</span>
           </div>
-          <OfflineCat size={110} />
+          <div className="creature-wrapper creature-wrapper--cat">
+            <OfflineCat size={115} />
+          </div>
         </div>
       </div>
     </section>
   );
 };
+
