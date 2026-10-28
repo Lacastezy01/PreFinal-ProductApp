@@ -1593,6 +1593,44 @@
   font-weight: 700;
 }
 
+.summary-coupon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--color-bg-yellow);
+  border: 1px dashed var(--color-black);
+  border-radius: var(--radius-sm);
+  padding: 0.3rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-black);
+  margin: 0.25rem 0;
+}
+
+.summary-total-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-total-subtext {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: #777777;
+  font-weight: 500;
+}
+
+.summary-trust-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #555555;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .summary-divider {
   height: 2px;
   background-color: var(--color-black);
