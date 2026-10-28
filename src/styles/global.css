@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: var(--color-bg-yellow);
+  color: var(--color-black);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-yellow);
+  color: var(--color-black);
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-yellow);
+  border-left: var(--border-medium);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-pink);
+  border: var(--border-medium);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pink-hover);
+}
+
+/* Selection Highlight */
+::selection {
+  background-color: var(--color-pink);
+  color: var(--color-warm-white);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-black);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Utility classes */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+  }
+}
+
+.text-pink { color: var(--color-pink); }
+.text-cyan { color: var(--color-cyan); }
+.text-green { color: var(--color-green-dark); }
+.text-orange { color: var(--color-orange); }
+
+.bg-pink { background-color: var(--color-pink); }
+.bg-cyan { background-color: var(--color-cyan); }
+.bg-green { background-color: var(--color-green); }
+.bg-warm-white { background-color: var(--color-warm-white); }
