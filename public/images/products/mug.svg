@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#FFFDF2"/>
+  <!-- Mug Handle -->
+  <path d="M260 110 C325 110, 325 210, 260 210" fill="none" stroke="#111111" stroke-width="14" stroke-linecap="round"/>
+  <path d="M260 110 C325 110, 325 210, 260 210" fill="none" stroke="#FF168B" stroke-width="8" stroke-linecap="round"/>
+  <!-- Mug Body -->
+  <rect x="110" y="80" width="160" height="155" rx="20" fill="#36DDE5" stroke="#111111" stroke-width="6"/>
+  <!-- Monster Eyes -->
+  <circle cx="160" cy="130" r="14" fill="#FFFDF2" stroke="#111111" stroke-width="4"/>
+  <circle cx="215" cy="130" r="14" fill="#FFFDF2" stroke="#111111" stroke-width="4"/>
+  <circle cx="164" cy="130" r="6" fill="#111111"/>
+  <circle cx="219" cy="130" r="6" fill="#111111"/>
+  <!-- Mouth with tiny monster tooth -->
+  <path d="M160 170 Q187 195 215 170" stroke="#111111" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <polygon points="183,178 193,178 188,188" fill="#FFFDF2" stroke="#111111" stroke-width="2"/>
+  <!-- Steam curls -->
+  <path d="M150 50 Q160 30 150 15" stroke="#FF168B" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M190 55 Q200 35 190 20" stroke="#62D99A" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M230 50 Q240 30 230 15" stroke="#FFB83F" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>

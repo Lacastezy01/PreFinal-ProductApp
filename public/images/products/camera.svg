@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#FFFDF2"/>
+  <!-- Top button & flash -->
+  <rect x="90" y="65" width="45" height="25" rx="5" fill="#FF168B" stroke="#111111" stroke-width="5"/>
+  <rect x="250" y="70" width="60" height="20" rx="4" fill="#36DDE5" stroke="#111111" stroke-width="4"/>
+  <!-- Camera Main Box -->
+  <rect x="60" y="85" width="280" height="165" rx="20" fill="#FFF16A" stroke="#111111" stroke-width="6"/>
+  <!-- Leather band accent -->
+  <rect x="60" y="145" width="280" height="40" fill="#FF168B" stroke="#111111" stroke-width="4"/>
+  <!-- Lens rings -->
+  <circle cx="200" cy="165" r="58" fill="#36DDE5" stroke="#111111" stroke-width="6"/>
+  <circle cx="200" cy="165" r="42" fill="#111111" stroke="#FFFDF2" stroke-width="4"/>
+  <circle cx="200" cy="165" r="24" fill="#62D99A" stroke="#111111" stroke-width="3"/>
+  <circle cx="192" cy="157" r="6" fill="#FFFDF2"/>
+  <!-- Viewfinder -->
+  <rect x="90" y="105" width="30" height="25" rx="5" fill="#FFFDF2" stroke="#111111" stroke-width="4"/>
+</svg>
