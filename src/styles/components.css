@@ -896,7 +896,149 @@
 }
 
 .back-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-slash {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: #888888;
+}
+
+.breadcrumb-current {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-black);
+}
+
+.details-guarantees-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.guarantee-box {
+  background-color: var(--color-warm-white);
+  border: var(--border-medium);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sticker-sm);
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+}
+
+.guarantee-title {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+}
+
+.guarantee-desc {
+  font-size: 0.75rem;
+  color: #555555;
+}
+
+.details-spec-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #F8F5E4;
+  padding: 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--color-black);
+}
+
+.details-spec-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #222222;
+}
+
+.spec-bullet {
+  color: var(--color-pink);
+  font-weight: bold;
+}
+
+.added-success-alert {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #E8F9EE;
+  border: var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.view-cart-link {
+  margin-left: auto;
+  color: var(--color-pink);
+  text-decoration: underline;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+}
+
+.details-in-cart-note {
+  margin-top: 0.85rem;
+  font-size: 0.88rem;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Not found card */
+.not-found-page {
+  padding: 4rem 1rem;
+}
+
+.not-found-card {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: var(--color-warm-white);
+  border: var(--border-heavy);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sticker-lg);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.not-found-badge {
+  display: inline-block;
+  background-color: var(--color-pink);
+  color: var(--color-warm-white);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.85rem;
+  border: var(--border-medium);
+  border-radius: var(--radius-pill);
+  margin-bottom: 1rem;
+}
+
+.not-found-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.not-found-text {
+  font-size: 0.95rem;
+  color: #555555;
+  margin-bottom: 2rem;
 }
 
 .back-link {
